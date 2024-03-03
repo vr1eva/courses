@@ -55,3 +55,9 @@ export type CreateCourseResponse = {
 export interface CoursePreviewProps {
     course: ThreadMessage
 }
+
+export interface CoursePageProps {
+    params: {
+        id: string
+    }
+}
