@@ -61,16 +61,16 @@ export default function Navbar() {
                     <Image width={199} height={61} src="/logo.png" alt="logo" />
                 </div>
                 <NavigationMenuItem>
-                    <Link href="/dashboard" legacyBehavior passHref>
+                    <Link href="/inicio" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            Home
+                            Inicio
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/courses" legacyBehavior passHref>
+                    <Link href="/cursos" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            Courses
+                            Cursos
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
