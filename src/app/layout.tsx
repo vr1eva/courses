@@ -18,8 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider
-      afterSignInUrl="/dashboard"
-      afterSignUpUrl="/onboarding"
+      afterSignInUrl="/courses"
+      afterSignUpUrl="/courses"
     >
       <html lang="en">
         <body className={inter.className}>
