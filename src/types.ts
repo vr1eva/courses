@@ -23,6 +23,7 @@ export type CourseMetadata = {
     duration: string,
     cc: boolean,
     description: string
+    archived: boolean
 }
 
 export type CreateThreadResponse = {

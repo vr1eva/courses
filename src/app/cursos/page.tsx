@@ -32,7 +32,10 @@ export default async function Courses() {
 
     return (
         <>
-            <CourseList courses={courses} />
+            <div className="p-4">
+                {process.env.MAINTENANCE_MODE ? <CourseForm /> : null}
+                <CourseList courses={courses} />
+            </div>
         </>
     )
 }

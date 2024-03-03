@@ -90,3 +90,26 @@ export async function fetchCourses(): Promise<FetchCoursesResponse> {
         error: "Missing OPENAI_THREAD_ID environment variable."
     }
 }
+
+export async function archiveCoursePreview(formData: FormData) {
+    const courseId = formData.get("courseId") as string
+    const threadId = process.env.OPENAI_THREAD_ID as string
+    if (!courseId || !threadId) {
+        throw new Error("Error fetching course and/or thread ids.")
+    }
+    const archivedPreview = await openai.beta.threads.messages.update(
+        threadId, courseId,
+        {
+            metadata: {
+                archived: true,
+            }
+        }
+    )
+
+    if (!archivedPreview) {
+        throw new Error("Could not update course preview.")
+    }
+    console.log(archivedPreview)
+
+    revalidatePath("/cursos")
+}

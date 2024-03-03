@@ -48,18 +48,18 @@ export default function CourseForm() {
                     name="title"
                     render={({ field }) => (
                         <FormItem>
-                            <FormLabel>Course title</FormLabel>
+                            <FormLabel>Título</FormLabel>
                             <FormControl>
-                                <Input placeholder="Creating a chatbot with..." {...field} />
+                                <Input placeholder="Como hacer..." {...field} />
                             </FormControl>
                             <FormDescription>
-                                This will be the title of the course.
+                                Este será el título del curso.
                             </FormDescription>
                             <FormMessage />
                         </FormItem>
                     )}
                 />
-                <Button type="submit">Submit</Button>
+                <Button type="submit">Enviar</Button>
             </form>
         </Form>
     )

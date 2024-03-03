@@ -6,26 +6,24 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 import Link from "next/link"
-
 import { CourseListProps, CourseMetadata, CoursePreviewProps } from "@/types"
 import CourseForm from "./course-form"
+import { archiveCoursePreview } from "@/actions"
 
 export default async function CourseList({ courses }: CourseListProps) {
     return (
-        <>
-            {process.env.MAINTENANCE_MODE ? <CourseForm /> : null}
-            {courses.map(course => (
-                <CoursePreview course={course} key={course.id} />
-            ))}
-        </>
+        courses.map(course => (
+            <CoursePreview course={course} key={course.id} />
+        ))
     )
 }
 
 function CoursePreview({ course }: CoursePreviewProps) {
     const metadata = course.metadata as CourseMetadata
     return (
-        <Link href={"/curso/" + course.id}>
+        metadata.archived ? null :
             <Card key={course.id}>
                 <CardHeader>
                     <CardTitle>{metadata.title}</CardTitle>
@@ -34,9 +32,15 @@ function CoursePreview({ course }: CoursePreviewProps) {
                     <CardDescription>{metadata.description}</CardDescription>
                 </CardContent>
                 <CardFooter>
-                    <p>Card Footer</p>
+                    <Link href={"/curso/" + course.id}>
+                        <Button>Ver curso</Button>
+                    </Link>
+                    {process.env.MAINTENANCE_MODE === 'active' ?
+                        <form action={archiveCoursePreview}>
+                            <input readOnly value={course.id} name="courseId" hidden />
+                            <Button type="submit" variant="destructive">Archive</Button>
+                        </form> : null}
                 </CardFooter>
             </Card>
-        </Link>
     )
 }
