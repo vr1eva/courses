@@ -36,7 +36,7 @@ export default function CourseForm() {
         if (error || !course) {
             console.error(error)
         } else {
-
+            console.log(course)
         }
     }
 
@@ -48,12 +48,12 @@ export default function CourseForm() {
                     name="title"
                     render={({ field }) => (
                         <FormItem>
-                            <FormLabel>Thread name</FormLabel>
+                            <FormLabel>Course title</FormLabel>
                             <FormControl>
-                                <Input placeholder="LimaJS" {...field} />
+                                <Input placeholder="Creating a chatbot with..." {...field} />
                             </FormControl>
                             <FormDescription>
-                                This will be the title of the LimaJS courses thread.
+                                This will be the title of the course.
                             </FormDescription>
                             <FormMessage />
                         </FormItem>
