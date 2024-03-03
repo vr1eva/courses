@@ -57,9 +57,9 @@ export default function Navbar() {
     return (
         <NavigationMenu className="max-w-screen-2xl mx-auto pt-[10px]">
             <NavigationMenuList>
-                <div>
-                    <Image width={199} height={61} src="/logo.png" alt="logo" />
-                </div>
+                <Link href="/" passHref>
+                    <Image width={127} height={58} src="/logo.svg" alt="logo" />
+                </Link>
                 <NavigationMenuItem>
                     <Link href="/inicio" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
