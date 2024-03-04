@@ -18,11 +18,13 @@ export default async function CourseList({ courses }: CourseListProps) {
     if (!user) {
         return null
     }
-    return (
-        courses.map(course => (
-            <CoursePreview course={course} key={course.id} />
-        ))
-    )
+    return <ul className="flex flex-col gap-2">
+        {
+            courses.map(course => (
+                <CoursePreview course={course} key={course.id} />
+            ))
+        }
+    </ul>
 }
 
 async function CoursePreview({ course }: CoursePreviewProps) {
