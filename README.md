@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Cursors
 
-## Getting Started
+![Cursors Logo](https://res.cloudinary.com/dkzaozc1s/image/upload/v1709512076/logo_wa1fhz.svg)
 
-First, run the development server:
+¡Bienvenido a Cursors! Tu destino para cursos gratuitos sobre JavaScript, Next.js, JavaScript, TypeScript y Figma hecho por el equipo de LimaJS. Nuestra principal motivación es proporcionar recursos de aprendizaje accesibles para personas de todo el mundo, ayudándoles a avanzar en sus habilidades en el desarrollo de productos y buscar empleo como desarrolladores de software.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Motivación
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+El objetivo principal de Cursors es democratizar la educación ofreciendo cursos de alta calidad de forma gratuita. Creemos en el poder del conocimiento para transformar vidas y comunidades. Nos enfocamos en JavaScript,  Next.js, JavaScript, TypeScript y Figma, permitiendo a los estudiantes adquirir experiencia en estas tecnologías esenciales.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ¿Por qué Cursors?
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Recursos de Aprendizaje Gratuitos**: Todos nuestros cursos son completamente gratuitos, asegurando que cualquier persona con conexión a Internet pueda acceder a una educación de calidad.
 
-## Learn More
+- **Currículo Diverso**: Desde conceptos fundamentales de JavaScript hasta temas avanzados en React, Next.js, TypeScript y Figma, nuestros cursos abarcan un amplio espectro, atendiendo tanto a principiantes como a desarrolladores experimentados.
 
-To learn more about Next.js, take a look at the following resources:
+- **Avance Profesional**: Ya sea que estés buscando tu primer trabajo como desarrollador de software o quieras mejorar tus habilidades en React, Vue.js o Sistemas de Diseño Core, Cursors proporciona los materiales de aprendizaje necesarios.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Cursos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Conceptos Básicos de JavaScript**
+- **Fundamentos de Nuxt.js**
+- **Curso Rápido de Next.js**
+- **Dominando JavaScript**
+- **Introducción a TypeScript**
+- **FigJam para Diseñadores de Productos**
+- **Inmersión Profunda en React**
+- **Esenciales de Vue.js**
+- **Construyendo Sistemas de Diseño Core**
 
-## Deploy on Vercel
+## Empezar
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Explora nuestro [catálogo de cursos](https://cursors-three.vercel.app/cursos) para encontrar los temas que te interesan.
+2. Haz clic en los enlaces de los cursos para acceder a materiales de aprendizaje gratuitos, que incluyen videos, documentación y proyectos prácticos.
+3. Únete a nuestra [comunidad](https://discord.gg/tdrAbYUX6K) para conectarte con otros estudiantes, hacer preguntas y colaborar en proyectos.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Comunidad
+
+Únete a nuestra comunidad para interactuar con otros estudiantes, compartir tu progreso y buscar asistencia. Creemos en el poder de la colaboración y aprender unos de otros.
+
+- [Discord](https://discord.gg/tdrAbYUX6K)
+## Contribución
+
+Damos la bienvenida a contribuciones de la comunidad. Si tienes experiencia en JavaScript, Nuxt.js, Next.js, TypeScript o FigJam y quieres contribuir a nuestra misión, consulta nuestras [pautas de contribución](CONTRIBUIR.md).
+
+¡Aprendamos, crezcamos y construyamos juntos!
