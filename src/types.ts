@@ -65,3 +65,7 @@ export interface CoursePageProps {
 export type UserMetadata = {
     bookmarks: [string]
 }
+
+export interface TypographyProps {
+    text: string
+}

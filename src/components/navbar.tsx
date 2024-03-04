@@ -57,7 +57,7 @@ export default function Navbar() {
     return (
         <NavigationMenu className="max-w-screen-2xl mx-auto pt-[10px]">
             <NavigationMenuList>
-                <Link href="/" passHref>
+                <Link href="/inicio" passHref>
                     <Image width={127} height={58} src="/logo.svg" alt="logo" />
                 </Link>
                 <NavigationMenuItem>
@@ -68,16 +68,16 @@ export default function Navbar() {
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/cursos" legacyBehavior passHref>
+                    <Link href="/bootcamp" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            Cursos
+                            Bootcamp
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/bootcamp" legacyBehavior passHref>
+                    <Link href="/cursos" legacyBehavior passHref>
                         <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                            Bootcamp
+                            Cursos
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
