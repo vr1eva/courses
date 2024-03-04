@@ -1,5 +1,4 @@
 import { ThreadMessage } from "openai/resources/beta/threads/index.mjs"
-import { object } from "zod"
 
 export type ActionErrorResponse = null | string
 
@@ -54,11 +53,15 @@ export type CreateCourseResponse = {
 }
 
 export interface CoursePreviewProps {
-    course: ThreadMessage
+    course: ThreadMessage,
 }
 
 export interface CoursePageProps {
     params: {
         id: string
     }
+}
+
+export type UserMetadata = {
+    bookmarks: [string]
 }

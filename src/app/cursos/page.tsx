@@ -33,7 +33,7 @@ export default async function Courses() {
     return (
         <>
             <div className="p-4">
-                {process.env.MAINTENANCE_MODE ? <CourseForm /> : null}
+                {process.env.MAINTENANCE_MODE === 'active' ? <CourseForm /> : null}
                 <CourseList courses={courses} />
             </div>
         </>

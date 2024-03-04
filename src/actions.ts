@@ -1,9 +1,9 @@
 "use server"
 import OpenAI from "openai"
 import { CreateCourseArgs, CreateCourseResponse, CreateThreadArgs, CreateThreadResponse, FetchCoursesResponse } from "./types"
-import { auth, clerkClient } from "@clerk/nextjs";
+import { auth, clerkClient, currentUser } from "@clerk/nextjs";
 import { revalidatePath } from "next/cache"
-import { CourseMetadata } from "@/types"
+import { UserMetadata } from "@/types"
 
 const openai = new OpenAI({
     apiKey: process.env.OPENAI_API_KEY
@@ -107,9 +107,49 @@ export async function archiveCoursePreview(formData: FormData) {
     )
 
     if (!archivedPreview) {
-        throw new Error("Could not update course preview.")
+        throw new Error("Could not archive course preview.")
     }
-    console.log(archivedPreview)
 
+    revalidatePath("/cursos")
+}
+
+export async function toggleCourseBookmark(isBookmarked: boolean, formData: FormData) {
+    const user = await currentUser()
+    if (!user) {
+        throw new Error("User not authenticated")
+    }
+    const { bookmarks } = user.privateMetadata as UserMetadata
+    if (!bookmarks) {
+        await clerkClient.users.updateUserMetadata(user.id, {
+            privateMetadata: {
+                bookmarks: []
+            }
+        });
+    }
+    let newBookmarks
+
+    const courseId = formData.get("courseId") as string
+    if (!courseId) {
+        throw new Error("Error fetching course ids.")
+    }
+
+    if (isBookmarked) {
+        const bookmarkIndex = bookmarks.findIndex(bookmark => bookmark === courseId)
+        newBookmarks = bookmarks.toSpliced(bookmarkIndex, 1)
+    } else {
+        newBookmarks = bookmarks.concat(courseId)
+    }
+
+    const userWithUpdatedBookmarks = await clerkClient.users.updateUserMetadata(user.id, {
+        privateMetadata: {
+            bookmarks: newBookmarks
+        }
+    });
+
+
+
+    if (!userWithUpdatedBookmarks) {
+        throw new Error("Could not toggle course bookmark.")
+    }
     revalidatePath("/cursos")
 }
