@@ -1,6 +1,6 @@
 # ![Cursors Logo](https://res.cloudinary.com/dkzaozc1s/image/upload/v1709512076/logo_wa1fhz.svg)
 
-¡Bienvenido a Cursors! Tu destino para cursos gratuitos sobre JavaScript, Next.js, JavaScript, TypeScript y Figma hecho por el equipo de LimaJS. Nuestra principal motivación es proporcionar recursos de aprendizaje accesibles para personas de todo el mundo, ayudándoles a avanzar en sus habilidades en el desarrollo de productos y buscar empleo como desarrolladores de software.
+¡Bienvenido a Cursors! Tu destino para cursos gratuitos sobre Next.js, JavaScript, TypeScript y Figma hecho por el equipo de LimaJS. Nuestra principal motivación es proporcionar recursos de aprendizaje accesibles para personas de todo el mundo, ayudándoles a avanzar en sus habilidades en el desarrollo de productos y buscar empleo como desarrolladores de software.
 
 ## Motivación
 
