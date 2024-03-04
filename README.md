@@ -1,6 +1,4 @@
-# Cursors
-
-![Cursors Logo](https://res.cloudinary.com/dkzaozc1s/image/upload/v1709512076/logo_wa1fhz.svg)
+# ![Cursors Logo](https://res.cloudinary.com/dkzaozc1s/image/upload/v1709512076/logo_wa1fhz.svg)
 
 ¡Bienvenido a Cursors! Tu destino para cursos gratuitos sobre JavaScript, Next.js, JavaScript, TypeScript y Figma hecho por el equipo de LimaJS. Nuestra principal motivación es proporcionar recursos de aprendizaje accesibles para personas de todo el mundo, ayudándoles a avanzar en sus habilidades en el desarrollo de productos y buscar empleo como desarrolladores de software.
 
@@ -26,7 +24,7 @@ El objetivo principal de Cursors es democratizar la educación ofreciendo cursos
 - **FigJam para Diseñadores de Productos**
 - **Inmersión Profunda en React**
 - **Esenciales de Vue.js**
-- **Construyendo Sistemas de Diseño Core**
+- **Construyendo Sistemas de Diseño**
 
 ## Empezar
 
